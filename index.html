@@ -20,6 +20,16 @@
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="NC旋盤加工時間シミュレーター。工程・工具から加工時間を計算。オフライン対応。">
 
+  <!--
+    Android ChromeはPWA（ホーム画面追加）では既定でinteractive-widget=
+    overlays-content相当の挙動になり、ソフトキーボード表示時にvisualViewport
+    がリサイズされない。FlutterはMediaQuery.viewInsetsで「リサイズされる」
+    前提のレイアウト・オーバーレイ計算（テキスト選択ツールバー等）をしている
+    ため、この不一致で貼り付けメニューが表示直後に消える等の不具合が起きる。
+    resizes-contentを明示して従来通りリサイズさせることで解消する。
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
