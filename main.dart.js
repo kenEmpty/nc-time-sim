@@ -130976,13 +130976,13 @@ j(a){return"CalculationException: "+this.a},
 $icu:1}
 A.m_.prototype={
 aIm(b4,b5,b6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3=b4.as
-if(b3==null)throw A.f(B.a09)
+if(b3==null)throw A.f(B.a08)
 s=B.x9.Dr(b3)
 if(!s.a)throw A.f(A.GU("ShapeData\u304c\u4e0d\u6b63\u3067\u3059: "+B.m.bH(s.b,", ")))
 r=b4.w
-if(r==null)throw A.f(B.a05)
+if(r==null)throw A.f(B.a04)
 q=b4.z
-if(q==null)throw A.f(B.a06)
+if(q==null)throw A.f(B.a05)
 p=A.M(b4.gfb(),t.aE)
 B.m.hE(p,new A.anM())
 o=b4.y
@@ -131364,27 +131364,28 @@ if(d!=null&&s>d)return d
 return s}}
 A.aqC.prototype={
 CQ(a,b,c,d,e){var s,r,q,p=null
-if(b.as===B.et)throw A.f(B.a0b)
+if(b.as===B.et)throw A.f(B.a0a)
 s=e==null
 r=s?p:e.at
 if(r==null){s=s?p:e.c
 throw A.f(A.GU("\u30c9\u30ea\u30eb\u5de5\u5177\u300c"+(s==null?"(\u672a\u9078\u629e)":s)+"\u300d\u306b\u5de5\u5177\u5f84(diameter)\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093"))}s=c.b
 if(r<=s)throw A.f(A.GU("\u73fe\u5728\u306e\u7a74\u5f84(\u03c6"+A.i(s)+")\u4ee5\u4e0b\u306e\u30c9\u30ea\u30eb(\u03c6"+A.i(r)+")\u306f\u4f7f\u7528\u3067\u304d\u307e\u305b\u3093"))
 q=b.CW
-if(q==null)throw A.f(B.a07)
+if(q==null)throw A.f(B.a06)
 return new A.nG(A.b([new A.hw(B.b2G,r,q,p,p,p,p)],t.Wp),c.RT(r))}}
 A.ass.prototype={
-CQ(a,b,c,d,e){var s,r,q,p,o,n,m,l=b.ch
-if(l==null||l<=0)throw A.f(B.a04)
+CQ(a,b,c,d,e){var s,r,q,p,o,n,m,l=b.ch,k=l==null
+if(!k&&l<=0)throw A.f(B.a0b)
 s=A.b5F(b,e)
-if(s<=0)throw A.f(B.a08)
+if(s<=0)throw A.f(B.a07)
 r=c.a
 q=c.b
 p=Math.abs(r/2-q/2)
-o=B.n.fj(l/s)
-n=A.b([],t.Wp)
-for(m=0;m<o;++m)n.push(new A.hw(B.b2H,r,p,q,null,null,null))
-return new A.nG(n,c.aJk(B.n.aW(c.c-l,0,1/0)))}}
+o=k?1:B.n.fj(l/s)
+n=k?s:l
+k=A.b([],t.Wp)
+for(m=0;m<o;++m)k.push(new A.hw(B.b2H,r,p,q,null,null,null))
+return new A.nG(k,c.aJk(B.n.aW(c.c-n,0,1/0)))}}
 A.au6.prototype={
 CQ(a,b,c,d,e){var s=null,r=B.qv.RO(d),q=A.b5F(b,e)
 switch(b.r.a){case 2:return this.a2L(q,r,!0,c,d)
@@ -131397,7 +131398,7 @@ n.push(new A.hw(B.Q0,r,o,q,q,q,q))}n.push(new A.hw(B.Q1,p,b,q,q,q,q))
 return new A.nG(n,d)}}
 A.avo.prototype={
 CQ(a,b,c,d,e){var s,r,q,p,o,n,m,l,k,j=null,i=c.b
-if(i<=0)throw A.f(B.a0a)
+if(i<=0)throw A.f(B.a09)
 s=A.blB(d)
 r=B.qv.RO(d)
 if(b.w===B.k3)return new A.nG(A.b([new A.hw(B.Q_,s,r,j,j,j,j)],t.Wp),c.RT(s))
@@ -142930,14 +142931,14 @@ B.a02=new A.aju()
 B.dP=new A.b3a()
 B.xh=new A.b3b()
 B.bpF=new A.anH(0,"pixel")
-B.a04=new A.kf("\u7aef\u9762\u52a0\u5de5\u306b\u306f\u524a\u308a\u4ee3(facingAllowance)\u306e\u6307\u5b9a\u304c\u5fc5\u8981\u3067\u3059")
-B.a05=new A.kf("\u7d20\u6750\u5916\u5f84\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093")
-B.a06=new A.kf("G50\u6700\u9ad8\u56de\u8ee2\u6570\u304c\u672a\u8a2d\u5b9a\u3067\u3059\u3002\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7de8\u96c6\u753b\u9762\u3067\u8a2d\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044\uff08G96\u4e00\u5b9a\u5468\u901f\u3067\u306e\u56de\u8ee2\u6570\u4e0a\u9650\u306b\u5fc5\u8981\u3067\u3059\uff09")
-B.a07=new A.kf("\u30c9\u30ea\u30eb\u52a0\u5de5\u306b\u306f\u7a74\u6df1\u3055(drillDepth)\u306e\u6307\u5b9a\u304c\u5fc5\u8981\u3067\u3059")
-B.a08=new A.kf("\u7aef\u9762\u52a0\u5de5\u306e\u5207\u8fbc\u307f\u91cf(Ap)\u306f\u6b63\u306e\u5024\u3067\u3042\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059")
-B.a09=new A.kf("ShapeData\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093")
-B.a0a=new A.kf("\u5185\u5f84\u52a0\u5de5\u306e\u524d\u306b\u30c9\u30ea\u30eb\u52a0\u5de5\u304c\u5fc5\u8981\u3067\u3059")
-B.a0b=new A.kf("\u30c9\u30ea\u30eb\u52a0\u5de5\u306fG97\uff08\u56fa\u5b9a\u56de\u8ee2\u6570\uff09\u5c02\u7528\u3067\u3059\u3002\u56de\u8ee2\u6570(S)\u3092\u6307\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002")
+B.a04=new A.kf("\u7d20\u6750\u5916\u5f84\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093")
+B.a05=new A.kf("G50\u6700\u9ad8\u56de\u8ee2\u6570\u304c\u672a\u8a2d\u5b9a\u3067\u3059\u3002\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7de8\u96c6\u753b\u9762\u3067\u8a2d\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044\uff08G96\u4e00\u5b9a\u5468\u901f\u3067\u306e\u56de\u8ee2\u6570\u4e0a\u9650\u306b\u5fc5\u8981\u3067\u3059\uff09")
+B.a06=new A.kf("\u30c9\u30ea\u30eb\u52a0\u5de5\u306b\u306f\u7a74\u6df1\u3055(drillDepth)\u306e\u6307\u5b9a\u304c\u5fc5\u8981\u3067\u3059")
+B.a07=new A.kf("\u7aef\u9762\u52a0\u5de5\u306e\u5207\u8fbc\u307f\u91cf(Ap)\u306f\u6b63\u306e\u5024\u3067\u3042\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059")
+B.a08=new A.kf("ShapeData\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093")
+B.a09=new A.kf("\u5185\u5f84\u52a0\u5de5\u306e\u524d\u306b\u30c9\u30ea\u30eb\u52a0\u5de5\u304c\u5fc5\u8981\u3067\u3059")
+B.a0a=new A.kf("\u30c9\u30ea\u30eb\u52a0\u5de5\u306fG97\uff08\u56fa\u5b9a\u56de\u8ee2\u6570\uff09\u5c02\u7528\u3067\u3059\u3002\u56de\u8ee2\u6570(S)\u3092\u6307\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002")
+B.a0b=new A.kf("\u7aef\u9762\u524a\u308a\u4ee3\u306f\u6b63\u306e\u5024\u3067\u3042\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059")
 B.a0c=new A.kf("\u76f4\u5f84\u304c0\u4ee5\u4e0b\u306e\u305f\u3081\u56de\u8ee2\u6570\u3092\u8a08\u7b97\u3067\u304d\u307e\u305b\u3093")
 B.iR=new A.nk(0,"cuttingTimeOnly")
 B.l7=new A.nk(1,"totalTime")
